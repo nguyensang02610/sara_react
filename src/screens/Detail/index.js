@@ -40,13 +40,14 @@ const Detail = ({navigation, route}) => {
     navigation.navigate('ShoppingCart');
   };
   return (
-    <View style={{flex: 1}}>
+    <ScrollView style={{flex: 1}}>
+    <View >
       {/* Header */}
       <View style={styles.ViewHeader}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <Icon2 name="arrow-back" size={30} color="white" />
         </TouchableOpacity>
-        <Text style={{fontSize: 20, color: 'white'}}>Tìm kiếm sách</Text>
+        {/* <Text style={styles.TxtIntroduce}>CHI TIẾT SẢN PHẨM</Text> */}
         <TouchableOpacity onPress={() => navigation.navigate('ShoppingCart')}>
           <Icon1 name="shoppingcart" size={30} color="white" />
         </TouchableOpacity>
@@ -59,15 +60,16 @@ const Detail = ({navigation, route}) => {
         <ImageBackground
           resizeMode="stretch"
           source={require('../../images/Avatar/individualBookPage.png')}
-          style={{width: '100%', height: 280}}
+          style={{width: '100%', height: 120}}
         />
         <View style={{marginTop: -100}}>
           <Image source={dataDetail.avatarImage} style={styles.ImageView} />
           <View style={{alignItems: 'center', marginTop: 20}}>
             <Text style={styles.TxtName}>{dataDetail.nameProducts}</Text>
-            <Text style={styles.TxtAuthor}>Tác giả : {dataDetail.author}</Text>
+            <Text style={styles.TxtAuthor}>Hãng sản xuất : {dataDetail.author}</Text>
             <Text style={styles.TxtPrice}>
-              {convertToNumberCommas(dataDetail.price)} Đ
+              Giá :
+              {convertToNumberCommas(dataDetail.price)} VNĐ
             </Text>
           </View>
           <View style={{marginVertical: 12}}>
@@ -120,6 +122,7 @@ const Detail = ({navigation, route}) => {
         </TouchableOpacity>
       </View>
     </View>
+    </ScrollView>
   );
 };
 export default Detail;

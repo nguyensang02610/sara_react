@@ -1,6 +1,6 @@
 import {Dimensions, StyleSheet} from 'react-native';
 const {width, height} = Dimensions.get('window');
-
+let deviceWidth = Dimensions.get('window').width;
 export default StyleSheet.create({
   container: {
     backgroundColor: '#F5F5F5',

@@ -11,7 +11,7 @@ export default StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingHorizontal: 20,
-    backgroundColor: '#5abd8c',
+    backgroundColor: '#a21d30',
     alignItems: 'center',
   },
   ImageView: {
@@ -25,8 +25,9 @@ export default StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     opacity: 0.6,
-    width: '60%',
+    width: '100%',
     textAlign: 'center',
+    color: '#a21d30'
   },
   TxtPrice: {
     opacity: 0.3,
@@ -41,7 +42,7 @@ export default StyleSheet.create({
   TxtIntroduce: {
     paddingHorizontal: 16,
     fontWeight: '500',
-    color: '#00a46c',
+    color: '#a21d30',
     fontSize: 16,
   },
   ViewBottomContainer: {
@@ -56,7 +57,7 @@ export default StyleSheet.create({
   },
   ViewButtom: {
     width: width * 0.4,
-    backgroundColor: '#00a46c',
+    backgroundColor: '#a21d30',
     height: 45,
     borderRadius: 50,
     alignItems: 'center',
