@@ -8,6 +8,7 @@ import ShoppingCart from '../screens/ShoppingCart';
 import Search from '../screens/Search';
 
 const Stack = createStackNavigator();
+
 const screenOptionStyle = {
   headerShown: false,
 };
